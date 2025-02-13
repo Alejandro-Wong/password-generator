@@ -1,0 +1,29 @@
+.generator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 800px;
+    height: 60px;
+}
+
+.passwordDisplay {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.spacer {
+    /* border: 1px solid blue; */
+    width: 100px;
+}
+
+.generateButton {
+    width: 100px;
+}
