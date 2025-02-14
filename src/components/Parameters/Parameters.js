@@ -27,19 +27,19 @@ function Parameters({length,numNums, numCaps, numSpec, changeLength, changeNumNu
     <div className="parameters">
       <div className="param">
         <span>Password Length</span>
-        <input type="number" min="0" max="100" defaultValue={length} onChange={handleLengthChange}/>
+        <input className="input" type="number" min="0" max="100" defaultValue={length} onChange={handleLengthChange}/>
       </div>
       <div className="param">
         <span>Number of Digits</span>
-        <input type="number" min="0" max="100" defaultValue={numNums} onChange={handleNumNumsChange}/>
+        <input className="input" type="number" min="0" max="100" defaultValue={numNums} onChange={handleNumNumsChange}/>
       </div>
       <div className="param">
         <span>Number of Capitalized Letters</span>
-        <input type="number" min="0" max="100" defaultValue={numCaps} onChange={handleNumCapsChange}/>
+        <input className="input" type="number" min="0" max="100" defaultValue={numCaps} onChange={handleNumCapsChange}/>
       </div>
       <div className="param">
         <span>Number of Special Characters</span>
-        <input type="number" min="0" max="100" defaultValue={numSpec} onChange={handleNumSpecChange}/>
+        <input className="input" type="number" min="0" max="100" defaultValue={numSpec} onChange={handleNumSpecChange}/>
       </div>
     </div>
   )
