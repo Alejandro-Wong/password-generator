@@ -1,17 +1,20 @@
 .generator {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid red; */
-    width: 800px;
-    height: 60px;
+    width: 50vw;
+    height: 90px;
 }
 
 .passwordDisplay {
-    background-color: white;
+    font-size: 20px;
+    color: white;
+    backdrop-filter: blur(60px);
     border: 1px solid black;
     border-radius: 25px;
-    width: 500px;
+    width: 50%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -25,5 +28,12 @@
 }
 
 .generateButton {
+    border-radius: 25px;
     width: 100px;
+    height: 30px;
+    background-color: #1cafff;
+    opacity: .75;
+    color: white;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
 }
