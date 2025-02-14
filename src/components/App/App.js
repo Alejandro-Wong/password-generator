@@ -29,12 +29,9 @@ function App() {
     const changeNumSpec = (num) => {
       setNumSpec(num);
     };
-
-
+    
     return (
-    <div className='page'>
     <div className="app">
-      <div className="background"> </div>
       <Generator
       instruction={instruction} 
       password={password}
@@ -53,7 +50,6 @@ function App() {
       changeNumNums={changeNumNums}
       changeNumSpec={changeNumSpec}
       />
-    </div>
     </div>
   )
 }
