@@ -1,4 +1,4 @@
-import React from 'react'
+import { React } from 'react'
 import generatePassword from '../../passwordGenerator';
 import './Generator.css';
 
@@ -22,7 +22,7 @@ function Generator({instruction,password, setPassword, length, numCaps, numSpec,
               {password}
             </span>
         </div>
-        <button className="generateButton" onClick={handleGenerateClick}>Generate</button>
+        <button className="generateButton" onClick={handleGenerateClick}>GENERATE</button>
     </div>
   )
 }
