@@ -1,5 +1,5 @@
 import { React } from 'react'
-import generatePassword from '../../passwordGenerator';
+import generatePassword from './passwordGenerator';
 import './Generator.css';
 
 function Generator({instruction,password, setPassword, length, numCaps, numSpec, numNums}) {
