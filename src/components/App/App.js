@@ -3,7 +3,7 @@ import Generator from '../Generator/Generator';
 import Parameters from '../Parameters/Parameters';
 import './App.css';
 
-const instruction = "Generate a new password with the following parameters";
+const instruction = "Generate a new password";
 function App() {
 
     // Initialize States
@@ -32,25 +32,28 @@ function App() {
 
 
     return (
+    <div className='page'>
     <div className="app">
-        <Generator
-        instruction={instruction} 
-        password={password}
-        setPassword={setPassword}
-        length={length}
-        numCaps={numCaps}
-        numNums={numNums}
-        numSpec={numSpec}/>
-        <Parameters
-        length={length}
-        numCaps={numCaps}
-        numNums={numNums}
-        numSpec={numSpec}
-        changeLength={changeLength}
-        changeNumCaps={changeNumCaps}
-        changeNumNums={changeNumNums}
-        changeNumSpec={changeNumSpec}
-        />
+      <div className="background"> </div>
+      <Generator
+      instruction={instruction} 
+      password={password}
+      setPassword={setPassword}
+      length={length}
+      numCaps={numCaps}
+      numNums={numNums}
+      numSpec={numSpec}/>
+      <Parameters
+      length={length}
+      numCaps={numCaps}
+      numNums={numNums}
+      numSpec={numSpec}
+      changeLength={changeLength}
+      changeNumCaps={changeNumCaps}
+      changeNumNums={changeNumNums}
+      changeNumSpec={changeNumSpec}
+      />
+    </div>
     </div>
   )
 }
