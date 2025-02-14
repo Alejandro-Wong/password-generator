@@ -1,14 +1,22 @@
 html {
-    background-color: black;
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-image: url('../../imgs/geometric.jpg');
+
 }
 
 .app {
-    background-color: gray;
+    /* background-color: gray; */
+    backdrop-filter: blur(25px);
+    filter: blur(0);
+    box-sizing: border-box;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -16,4 +24,10 @@ html {
     align-items: center;
     height: 25vh;
     width: 50vw;
+
+    box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
 }
+
+
